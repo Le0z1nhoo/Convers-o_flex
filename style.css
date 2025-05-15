@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 10px;
+  max-width: 640px; /* Reduzido de 960px para deixar mais compacto */
+  width: 100%;
+}
+
+.conversor {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: grid;
+}
+
+.conversor label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.conversor input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.conversor button {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.conversor button:hover {
+  background-color: #555;
+}
+
+.conversor div[id^="resultado"] {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #006400;
+  font-weight: bold;
+}
